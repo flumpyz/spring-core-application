@@ -28,6 +28,9 @@
     <util:map id="loggerMap">
         <entry key="INFO" value-ref="consoleEventLogger" />
         <entry key="ERROR" value-ref="combinedEventLogger" />
+        <entry key="WARNING" value-ref="cacheFileEventLogger" />
+        <entry key="DEBUG" value-ref="fileEventLogger" />
+        <entry key="CRITICAL" value-ref="dbLogger" />
     </util:map>
 
     <bean id="app" class="com.yet.spring.core.App">
